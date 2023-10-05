@@ -1,0 +1,86 @@
+/* Estilos generales del header */
+/* Estilos generales del header */
+header {
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    padding: 10px 20px;
+}
+
+/* Estilos de la barra superior con redes sociales */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Puedes cambiar el color de fondo según tus preferencias */
+    padding: 10px 20px;
+}
+
+/* Estilos del logo */
+.logo img {
+    max-height: 50px; /* Ajusta la altura del logo según tus necesidades */
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espacio entre elementos del menú */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento del menú */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Cambia el color de texto según tus preferencias */
+    font-weight: bold;
+}
+
+/* Cambia el estilo del enlace cuando se pasa el ratón por encima */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la información desplegada en cada página */
+.page-content {
+    display: none;
+    padding: 20px;
+}
+
+/* Estilos para la imagen de la página */
+.page-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mostrar la información cuando el cursor esté sobre los elementos del menú */
+nav ul li:hover + .page-content {
+    display: block;
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-button a {
+    text-decoration: none;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Borde redondeado */
+    font-weight: bold;
+}
+
+/* Estilo al pasar el ratón sobre el botón */
+.login-button a:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Alinea el botón de inicio de sesión a la derecha */
+.login-button {
+    margin-left: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
