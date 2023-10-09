@@ -14,7 +14,7 @@ body{
 }
 
 .navegacion nav{
-	width: 90%;
+	width: 100%;
 	max-width: 100%;
 	background: #2D3447;
 }
@@ -22,6 +22,7 @@ body{
 .navegacion nav ul{
 	list-style: none;
 	position: relative;
+	left: 65%;
 }
 
 .navegacion nav > ul > li{
@@ -60,6 +61,9 @@ body{
 	display: flex;
 }
 
+.navegacion nav ul li .submenu .submenu-items{
+	margin: 0 20px;
+}
 
 .navegacion nav ul li .submenu .submenu-items p{
 	font-weight: 600;
@@ -76,7 +80,18 @@ body{
 	margin: 6px 0;
 	display: block;
 }
-.logo{
-    width: 30%; /* Ancho deseado en píxeles */
-  height: 20%;
+
+.cimg {
+	
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+     
+}
+
+.logo {
+	margin-top: 2% !important;
+    width: 10%; /* Ancho deseado en píxeles o porcentaje */
+}
+
+@media (max-width:768px){
+   
 }
