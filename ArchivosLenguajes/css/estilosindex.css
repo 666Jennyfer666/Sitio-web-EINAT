@@ -1,0 +1,20 @@
+/* Estilo para redondear las imágenes en la lista */
+.accesos-rapidos ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+  }
+  
+  .accesos-rapidos li {
+    display: inline-block;
+    margin: 10px; /* Espacio entre elementos de la lista */
+    text-align: center; /* Centra el contenido horizontalmente */
+  }
+  
+  .accesos-rapidos img {
+    border-radius: 50%; /* Redondea las imágenes en un 50% para hacerlas círculos */
+    width: 50px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 50px;
+    border: 2px solid #000; /* Añade un borde opcional */
+  }
+  
+  
