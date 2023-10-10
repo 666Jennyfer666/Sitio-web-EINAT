@@ -575,7 +575,7 @@ a.itemResultado{
   width: 100%;
   margin-bottom: 15px;
 }
-  .filterNav ul{}
+  /**.filterNav ul{}**/
     .filterNav ul a{
       font-family: 'Poppins', sans-serif;
       font-size: 14px;
@@ -1468,8 +1468,8 @@ a.itemResultado{
     margin-bottom: 60px;
   }  
 
-  .titleAccordionSust{
-  }
+ /** .titleAccordionSust{
+  }**/
 
     .titleAccordionSust button{ 
       font-size: 24px;
@@ -1886,8 +1886,8 @@ footer{
    @media (max-width: 800px) {
 
     /*/// HEADER ///*/
-    header{
-    }
+   /** header{
+    }**/
 
     .navbar-light .navbar-nav .nav-link {
         font-size: 15px;
