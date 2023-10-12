@@ -8,13 +8,6 @@
       font-family: 'Poppins', sans-serif;
  }
 
- .blueSky{
-   background: #78acae; 
-   background: -moz-linear-gradient(to right,  #78acae 1%,#30709c 100%); 
-   background: -webkit-linear-gradient(to right,  #78acae 1%,#30709c 100%);
-   background: linear-gradient(to right,  #78acae 1%,#30709c 100%);
- }
-
  .coverImg{
    background: #000000;
    background: -moz-linear-gradient(to right,  #000000 0%,#fff0 100%);
@@ -23,7 +16,7 @@
  }
 
  .white{color: #ffffff;}
- .blue01{color: #2e6f9c;}
+ .blue01{color: rgb(29, 29, 99);}
  .green01{color: #45bf55;}
 
  .roundedx6{
