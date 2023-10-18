@@ -515,10 +515,10 @@ a.itemResultado{
 .topSection{
   padding-top: 60px;
   padding-bottom: 80px;
-  background: #78acae; 
-  background: -moz-linear-gradient(to right,  #78acae 25%,#30709c 100%); 
-  background: -webkit-linear-gradient(to right,  #78acae 25%,#30709c 100%);
-  background: linear-gradient(to right,  #78acae 25%,#30709c 100%);
+  background: #025781;
+  background: -moz-linear-gradient(to right,  #025781 25%,#0594db 100%); 
+  background: -webkit-linear-gradient(to right,  #025781 25%,#0594db 100%);
+  background: linear-gradient(to right,  #025781 25%,#0594db 100%);
   min-height: 330px;
 }
   .topSection h3{
