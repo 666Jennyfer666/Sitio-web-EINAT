@@ -8,76 +8,123 @@
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="ArchivosLenguajes/css/estilosbasicos.css">
     <link rel="stylesheet" href="ArchivosLenguajes/css/estilosindex.css">
-
+	<link rel="stylesheet" type="text/css" href="ArchivosLenguajes/slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="ArchivosLenguajes/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-custom.css">
+    <link rel="stylesheet" href="ArchivosLenguajes/css/main.css">
 </head>
 <body>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.js"></script>
-    
-    <!-- Contenido de la página -->
+    <!-- Botón de hamburguesa para el menú responsive -->
+<div id="menu-toggle" class="menu-toggle">☰</div>
+	<!-- Menú -->
+    <nav class="navbar navbar-expand-lg navbar-light bgWhite p-0" aria-label="Ninth navbar example">
+        <div class="container-xl">
+          <a class="navbar-brand" href="index.html">
+            <img class="w-100" style="max-width: 150px;" src="img/LOGO SIN FONDO.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample07XL">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Programas
+                </a>
+                <ul class="dropdown-menu subMenuSt" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="educacionEcoHeroes.html">Eco-Héroes</a></li>
+                                  <li><a class="dropdown-item" href="educacionCharlasEducativas.html">Charlas Educativas</a></li>
+                                  <li><a class="dropdown-item" href="educacionVisitasGuiadas.html">Visitas Guiadas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="educacionMaterialEducativo.html">Material Educativo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="educacionContacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+	<!-- Carrucel -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/imagenes-de-prueba/banner-prueba.png" class="d-block w-100" alt="...">
+            <img src="img/imagenes-de-prueba/g.avif" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>EINAT</h5>
+				<p>agua potable o agua para consumo humano</p>
+			  </div>
           </div>
           <div class="carousel-item">
-            <img src="img/imagenes-de-prueba/banner-prueba2.jpg" class="d-block w-100" alt="...">
+            <img src="img/imagenes-de-prueba/gg.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>¿agua?</h5>
+				<p>Lorem deleniti odit voluptatem vitae magni!</p>
+			  </div>
           </div>
           <div class="carousel-item">
-            <img src="img/imagenes-de-prueba/banner-prueba3.png" class="d-block w-100" alt="...">
+            <img src="img/imagenes-de-prueba/ggg.jfif" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>...</h5>
+				<p>...</p>
+			  </div>
           </div>
         </div>
       </div>
-    <!-- acessos rappidos-->
-	  <div class="accesos-rapidos visible">
-		<span>Accesos Rápidos</span>
-		<ul>
-			<li>
-				<a href="conoce-factura.html"><img src="img/Iconos/conoce-tu-factura.png"><p>Conoce tu factura</p></a>
-			</li>
-			
-			<li>
-				<a href="c-p-t-p-c.html"><img src="img/Iconos/como-pagar-tu-factura.png"><p>Como pagar tu factura</p></a>
-			</li>
 
-			<li>
-				<a href="info-util.html"><img src="img/Iconos/info-util.png"><p>Información util</p></a>
-			</li>
-			
-			<li>
-				<a href=""><img src="img/Iconos/"><p>Sustentabilidad y Sostenibilidad</p></a>
-			</li>
-			<li>
-				<a href=""><img src=""><p>Concientización</p></a>
-			</li>
-			<li>
-				<a href="contacto.html"><img src="img/Iconos/contacto.png"><p>Contacto</p></a>
-			</li>
-			<li>
-				<a href="educacionCongresoDelAgua.html"><img src="img/Iconos/congreso-del-agua.png"><p>Congreso del agua</p></a>
-			</li>
-			<li>
-				<a href="servicios.html"><img src="img/Iconos/servicio.png"><p>Servicios</p></a>
-			</li>
-			<li>
-				<a href="img/Iconos/calidad-control-del-agua.png"><img src="img/Iconos/calidad-control-del-agua.png"><p>Calidad y control del agua</p></a>
-			</li>
-			<li>
-				<a href="educacion.html"><img src="img/Iconos/educacion.png"><p>educación</p></a>
-			</li>
-		</ul>
+
+    <!-- acessos rappidos-->
+	<div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+		<div><h3><img src="img/Iconos/calidad-control-del-agua.png" alt="Imagen 1" class="iconoimg"></h3></div>
+		<div><h3><img src="img/Iconos/calidad-control-del-agua.png" alt="Imagen 1" class="iconoimg"></h3></div>
+		<div><h3><img src="img/Iconos/calidad-control-del-agua.png" alt="Imagen 1" class="iconoimg"></h3></div>
+		<div><h3><img src="img/Iconos/calidad-control-del-agua.png" alt="Imagen 1" class="iconoimg"></h3></div>
+		<div><h3><img src="img/Iconos/calidad-control-del-agua.png" alt="Imagen 1" class="iconoimg"></h3></div>
+		<div><h3><img src="img/Iconos/1697111660231.png" alt="Imagen 3" class="iconoimg"></h3></div>
+		<div><h3><img src="img/Iconos/1697111660231.png" alt="Imagen 3" class="iconoimg"></h3></div>
+		<div><h3><img src="img/Iconos/1697111660231.png" alt="Imagen 3" class="iconoimg"></h3></div>
+		<div><h3><img src="img/Iconos/1697111660231.png" alt="Imagen 3" class="iconoimg"></h3></div>
+		<div><h3><img src="img/Iconos/1697111660231.png" alt="Imagen 3" class="iconoimg"></h3></div>
+		
+		<button class="slick-prev" aria-label="Anterior">
+			<span>&lt;</span> <!-- Aquí puedes personalizar la flecha izquierda -->
+		  </button>
+		  <!-- Flecha de navegación derecha -->
+		  <button class="slick-next" aria-label="Siguiente">
+			<span>&gt;</span> <!-- Aquí puedes personalizar la flecha derecha -->
+		  </button>
+		</div>
 	</div>
 
-
+	<p>AAAAAAAAAAAAAAA</p>
         <div class="page-content">
             <h1>nose</h1>
             <p>El capibara, chigüire o carpincho (Hydrochoerus hydrochaeris) 
 				[nota 1] es una especie de roedor de la familia de los cávidos,
-				 nativa de Sudamérica. Es el roedor viviente de mayor tamaño y peso </p>
+				 nativa de Sudamérica. Es el roedor viviente de mayor tamaño y peso</p>
             <img src="imagen_pagina1.jpg" alt="Imagen de la página 1">
         </div>
         
     <!-- pagina web -->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odit possimus quos laboriosam officiis et fugit libero eum nemo commodi assumenda esse velit officia ipsa, aspernatur laudantium at illum in!</p>
+	<P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati soluta quasi saepe distinctio minima laboriosam, veniam asperiores accusantium praesentium omnis ut doloribus adipisci quo odit eius mollitia nemo repellat magnam?</P>
 
+
+	<script src="ArchivosLenguajes/js/index.js"></script>
+	<script src="ArchivosLenguajes/slick-1.8.1/slick/slick.js"></script>
+	
+	
+	<script src="ArchivosLenguajes/JQuery/jquery-3.3.1.js"></script>      
+    <script src="ArchivosLenguajes/JQuery/jquery-migrate-git.min.js"></script>
+   
+    <script src="ArchivosLenguajes/popper/popper.min.js"></script>
+    <script src="ArchivosLenguajes/popper/bootstrap.js"></script>
+
+    <!--iconos-->
+    <script defer src="ArchivosLenguajes/js/all.js"></script>
 </body>
 </html>

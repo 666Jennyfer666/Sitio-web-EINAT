@@ -1,0 +1,79 @@
+
+
+/* Estilos generales del menú */
+.main-menu {
+    background-color: #333;
+    color: #fff;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos de los cuadrados */
+.main-menu li {
+    display: inline-block;
+    margin-right: 2px;
+    padding: 10px 20px; /* Añade padding para hacer el bloque más cuadrado */
+    color: #000000; /* Cambia el color del texto a blanco */
+    border-radius: 1px; /* Agrega esquinas redondeadas para hacerlo más cuadrado */
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el color de fondo */
+}
+
+.main-menu li:hover {
+    background-color: #9fa5a8; /* Cambia el color de fondo cuando se pasa el mouse sobre el elemento */
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para el menú desplegable */
+.mega-menu-item {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    left: 0;
+    top: 100%;
+}
+
+.mega-menu-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilos para los íconos */
+.fa {
+    margin-right: 5px;
+}
+
+/* Estilos para hacer el menú responsive */
+/*@media (max-width: 768px) {
+    .main-menu {
+        display: none;
+    }
+
+    .main-menu.show {
+        display: block;
+    }
+
+    .main-menu .nav {
+        display: block;
+    }
+
+    .main-menu .nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .mega-menu-item:hover .dropdown-menu {
+        display: none;
+    }
+}*/
+

@@ -1,18 +1,12 @@
-/* Estilo para redondear las imágenes en la lista */
-.accesos-rapidos ul {
-    list-style: none; /* Quita los puntos de la lista */
-    padding: 0;
+  
+  /* Estilos adicionales según tus necesidades */
+  .slick-prev,
+.slick-next {
+    color: #ff0000; /* Cambia este valor al color deseado, en este caso, rojo (#ff0000) */
+}
+
+
+  .iconoimg {
+    width: 30%; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 30%;
   }
-  
-  .accesos-rapidos li {
-    display: inline-block;
-    margin: 10px; /* Espacio entre elementos de la lista */
-    text-align: center; /* Centra el contenido horizontalmente */
-  }
-  
-  .accesos-rapidos img {
-    width: 12%; /* Ajusta el tamaño de las imágenes según tus necesidades */
-    height: 12%;
-  }
-  
-  
