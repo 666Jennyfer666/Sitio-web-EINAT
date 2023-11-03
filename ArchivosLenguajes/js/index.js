@@ -1,5 +1,5 @@
 /* banner de img */
-const carousel = document.querySelector('.carousel2');
+/*const carousel = document.querySelector('.carousel2');
   const dots = document.querySelectorAll('.dot');
 
   let currentIndex = 0;
@@ -10,10 +10,10 @@ const carousel = document.querySelector('.carousel2');
     dots.forEach((dot, index) => {
       dot.classList.toggle('active', index === currentIndex);
     });
-  }
+  }*/
 
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % 3; 
+  /*function nextSlide() {
+    currentIndex = (currentIndex + 7) % 3; 
     updateCarousel();
   }
 
@@ -25,10 +25,10 @@ const carousel = document.querySelector('.carousel2');
   });
 
   setInterval(nextSlide, 5000); // Cambiar automáticamente cada 5 segundos (en milisegundos)
-  
+  */
   /* acessos rapidos */
 
-  $(document).ready(function() {
+  /**$(document).ready(function() {
     // Cuando se pasa el cursor sobre un elemento del menú
     $('.item-menu-aguas a').hover(
     function() {
@@ -51,4 +51,4 @@ const carousel = document.querySelector('.carousel2');
       $('.menu-info-box').remove();
     }
     );
-    });
+    });*/

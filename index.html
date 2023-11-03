@@ -220,138 +220,141 @@
 
 <!-- Carrousel banner -->
 
-<div class="carousel-container1">
-  <div class="carousel2">
-    <div class="carousel-item3">
-      <img src="img/imagenes-de-prueba/banner-9-agua.jpg" alt="Imagen 1">
-    </div>
-    <div class="carousel-item3">
-      <img src="img/imagenes-de-prueba/banner-9-agua - copia.jpg" alt="Imagen 2">
-    </div>
-    <div class="carousel-item3">
-      <img src="img/imagenes-de-prueba/banner-9-agua.jpg" alt="Imagen 3">
-    </div>
-  </div>
-</div>
-
-<div class="carousel-dots4">
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-</div>
 
     <!-- acessos rappidos-->
     <style>
-    .carousel-container01 {
-      position: relative;
-      width: 84%;
-      overflow: hidden;
-      margin: 0 auto;
-    }
-    
-    .carousel {
-      display: flex;
-      transition: transform 0.5s;
-    }
-    
-    .carousel div {
-      flex: 0 0 11%; /* Ajusta el ancho según tus necesidades */
-      margin-left: 3%;
-      margin-right: 3%;
-    }
-    
-    .prev-button,
-    .next-button {
-      position: absolute;
-      top: 125%; /* cambiar para ajustar a las img de accesos raidos */
-      transform: translateY(-50%);
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    
-   /* .prev-button {
-      left: 0;
-    }
-    
-    .next-button {
-      right: 0;
-    }*/
+.carousel-container01 {
+  position: relative;
+  width: 84%;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center; /* Centra horizontalmente */
+}
 
-    .prev-button,
-.next-button {
-  width: 40px; /* Ancho más grande */
-  height: 40px; /* Altura más grande */
-   /* Borde más grueso */
+.carousel {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px; /* Tamaño de fuente más grande */
+  transition: transform 0.5s;
+}
+
+.Acesso-rapidos-img {
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  border: 5px solid white; /* Agrega un borde blanco de 2px */
+}
+
+.carousel div {
+  flex: 0 0 11%; /* Ajusta el ancho según tus necesidades */
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.prev-button,
+.next-button {
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Tamaño de fuente personalizado */
   font-weight: bold;
+  color: #036595; /* Color personalizado */
+  position: absolute;
+  top: 50%; /* Ajusta el 60% para centrar alrededor de esa altura */
+  transform: translateY(-50%); /* Centra verticalmente alrededor del 60% */
+  margin-top: 0; /* Elimina el margen superior previo */
 }
 
 .prev-button {
   left: 0;
+  color: aliceblue;
+  margin-left: 2%;
+  
 }
 
 .next-button {
   right: 0;
+  color: aliceblue;
+  margin-right: 2%;
 }
 
-.Acesso-rapidos-img {
-  border-radius: 50%; /* Hace que el botón sea un círculo */
-  border: 1px solid #036595;
-}
-.conteiner-botton-ar{
+.conteiner-botton-ar {
   background-color: aliceblue;
-}   
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+.ca{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #0074b1;
+}
+@media (max-width: 768px) {
+  .Acesso-rapidos-img {
+    width: 50%; /* Ancho del 100% en pantallas más pequeñas */
+    height: auto;
+  }
+  .carousel div {
+  flex: 0 0 40%; /* Ajusta el ancho según tus necesidades */
+  margin: 0 5%;
+}
+.carousel-container01{
+  margin-top: 2%;
+}
+
+}
     </style>
 
-    <div>
-    <h1 class="acessos-raidos-title" style="font-weight: bold;"><strong>ACESSOS RAPIDOS</strong></h1></li>
-    <div class="conteiner-botton-ar">
-    <button class="prev-button" aria-label="Anterior">
-      <span>&lt;</span>
-    </button></div>
-	<div class="carousel-container01">
-    <div class="carousel">
-      <div><a href="calid-contr-agua.html"><h3><img src="img/Iconos/calidad-control-del-agua.png" alt="Imagen 1" class="Acesso-rapidos-img">
-      <p><strong style="font-size: 16px;">calidad y control del agua</strong></p></a></h3></div>
+<div class="ca">
+  <h1 class="acessos-raidos-title" style="font-weight: bold; color: rgb(255, 255, 255);"><strong>ACESSOS RAPIDOS</strong></h1>
+  <div class="conteiner-botton-ar">
+      <button class="prev-button" aria-label="Anterior">
+          <span>&lt;</span>
+      </button>
+  </div>
+  <div class="carousel-container01">
+  <div class="carousel">
+      <!-- img 1000 x 1000 px -->
+      <div>
+          <a href="calid-contr-agua.html">
+              <img src="img/Iconos/congreso agua.png" alt="Imagen 1" class="Acesso-rapidos-img">
+              <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">calidad y control del agua</strong></p>
+          </a>
+      </div>
+      <div><a href="conoce-factura.html"><img src="img/Iconos/congreso agua.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
+      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">conoce tu factura</strong></p></a></div>
 
-      <div><a href="conoce-factura.html"><h3><img src="img/Iconos/conoce-tu-factura.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px;">conoce tu factura</strong></p></h3></a></div>
+      <div><a href="info-util.html"><img src="img/Iconos/info-util-fondo-azul.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
+      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">Información util</strong></p></a></div>
 
-      <div><a href="info-util.html"><h3><img src="img/Iconos/info-util.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px;">Información util</strong></p></a></h3></div>
+      <div><a href="empresa.html"><img src="img/Iconos/congreso agua.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
+      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">Información útil</strong></p></a></div>
 
-      <div><a href="empresa.html"><h3><img src="img/Iconos/empresa.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px;">Información útil</strong></p></h3></a></div>
+      <div><a href="contacto.html"><img src="img/Iconos/congreso agua.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
+      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">contacto</strong></p></a></div>
 
-      <div><a href="contacto.html"><h3><img src="img/Iconos/contacto.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px;">contacto</strong></p></h3></a></div>
-
-      <div><a href="educacionCongresoDelAgua.html"><h3><img src="img/Iconos/congreso-del-agua.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px;">congreso del agua</strong></p></h3></a></div>
-      <div><a href="servicios.html"><h3><img src="img/Iconos/servicio.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px;">servicios</strong></p></h3></a></div>
-
-      <div><a href="educacion.html"><h3><img src="img/Iconos/educacion.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px;">educación</strong></p></h3></a></div>
-
-      <div><a href="concientizacion.html"><h3><img src="img/Iconos/concientizacion.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px;">concientización</strong></p></h3></a></div>
+      <div><a href="educacionCongresoDelAgua.html"><img src="img/Iconos/congreso agua.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
+      <p><strong style="font-size: 16px;color: rgb(255, 255, 255);">congreso del agua</strong></p></a></div>
       
-      <div><a href="SustySost.html"><h3><img src="img/Iconos/susysos.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px;">Sustentabilidad y sostenibilidad</strong></p></h3></a></div>
-    </div></div></div>
-    
-    <div class="conteiner-botton-ar">
-    <button class="next-button" aria-label="Siguiente">
-      <span>&gt;</span>
-    </button></div>
-  
+      <div><a href="servicios.html"><h3><img src="img/Iconos/congreso agua.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
+      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">servicios</strong></p></h3></a></div>
+
+      <div><a href="educacion.html"><img src="img/Iconos/educacion.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
+      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">educación</strong></p></a></div>
+
+      <div><a href="concientizacion.html"><img src="img/Iconos/concientizacion.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
+      <p><strong style="font-size: 16px ;color: rgb(255, 255, 255);">concientización</strong></p></a></div>
+      
+      <div><a href="SustySost.html"><img src="img/Iconos/susysos.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
+      <p><strong style="font-size: 16px ;color: rgb(255, 255, 255);">Sustentabilidad y sostenibilidad</strong></p></a></div> 
+  </div>
+</div>
+  <div class="conteiner-botton-ar" style="align-items: center;">
+      <button class="next-button" aria-label="Siguiente">
+          <span>&gt;</span>
+      </button>
+  </div>
+</div>
 
   
 
@@ -363,7 +366,7 @@ const imageCount = carousel.children.length;
 let currentIndex = 0;
 
 nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 2) % imageCount;
+  currentIndex = (currentIndex + 1.4) % imageCount;
   updateCarousel();
 });
 
@@ -380,7 +383,37 @@ function updateCarousel() {
   // Restablecer la transición después de que termine la animación
   setTimeout(() => {
     carousel.style.transition = "none";
-  }, 400); // 0.4 segundos (ajusta según la duración de tu animación)
+  }, 400);
+ } // 0.4 segundos (ajusta según la duración de tu animación)
+
+ // para las pantallas mas pequeñas
+ if (window.matchMedia('(max-width: 768px)').matches) {
+  // Modifica el comportamiento en pantallas más pequeñas
+  nextButton.addEventListener('click', () => {
+    // Lógica diferente para pantallas más pequeñas
+    currentIndex = (currentIndex + 1) % imageCount; // Mover dos imágenes a la vez
+
+    if (currentIndex === 0) {
+      currentIndex = imageCount - 1; // Ir al penúltimo conjunto de dos imágenes al llegar al principio
+    }
+    updateCarousel();
+  });
+
+  nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % imageCount; // Mover una imagen a la vez
+  updateCarousel();
+});
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + imageCount) % imageCount; // Mover una imagen a la vez
+  updateCarousel();
+
+  
+    if (currentIndex === imageCount - 1) {
+      currentIndex = 2; // Ir al segundo conjunto de dos imágenes al llegar al final
+    }
+    updateCarousel();
+  });
 }
 
   </script>
