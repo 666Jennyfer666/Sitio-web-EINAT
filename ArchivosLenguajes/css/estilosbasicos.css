@@ -63,6 +63,7 @@
         padding: 15px 15px;
         position: relative;
         margin-top: 15px;
+        text-decoration: none;
     }
     #mainMenuNvo > ul > li > a:hover,
     #mainMenuNvo > ul > li > a:focus {
