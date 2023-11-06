@@ -1,6 +1,6 @@
 <!-- casita -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -218,9 +218,19 @@
                            
                          </nav>
   </div>
-         
+<style>
+  .img-index{
+    max-width: 100%;
+  }
+  
+</style>
 <!--END: NAVIGATION-->
-
+<div class="img-index">
+<img src="img/imagenes-de-prueba/banner-9-agua - copia.jpg">
+<div class="img-icon-index">
+<img src="img/LOGO SIN FONDO.png"><strong>aguas translasierras</strong>
+</div>
+</div>
 <!-- Carrousel banner -->
 
     <!-- acessos rappidos-->
@@ -350,7 +360,8 @@
       
       <div><a href="SustySost.html"><img src="img/Iconos/susysos.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
       <p><strong style="font-size: 16px ;color: rgb(255, 255, 255);">Sustentabilidad y sostenibilidad</strong></p></a></div> 
-  </div>
+    
+    </div>
 </div>
   <div class="conteiner-botton-ar" style="align-items: center;">
       <button class="next-button" aria-label="Siguiente">
@@ -380,13 +391,13 @@ prevButton.addEventListener('click', () => {
 
 function updateCarousel() {
   const translateX = -currentIndex * 12; // 12% para cada imagen
-  carousel.style.transition = "transform 0.4s ease-in-out";
+  carousel.style.transition = "transform 0.6s ease-in-out";
   carousel.style.transform = `translateX(${translateX}%)`;
 
   // Restablecer la transición después de que termine la animación
   setTimeout(() => {
     carousel.style.transition = "none";
-  }, 400);
+  }, 600);
  } // 0.4 segundos (ajusta según la duración de tu animación)
 
  // para las pantallas mas pequeñas
