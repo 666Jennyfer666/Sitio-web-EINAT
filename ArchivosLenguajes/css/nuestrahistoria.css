@@ -1,0 +1,25 @@
+.contenedorMiojeje {
+    margin: 20px;
+    padding: 10px; /* Agrega relleno para separar el contenido de los bordes */
+    display: flex;
+    background: linear-gradient(to right, #2f547a, #88b5c7); /* Degradado de azul oscuro a azul pastel */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+.contenedorCelesteAGris{
+    margin: 20px;
+    padding: 10px; /* Agrega relleno para separar el contenido de los bordes */
+    display: flex;
+    background: linear-gradient(to right, #93afcc, #84949b); /* Degradado de azul oscuro a azul pastel */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+.contenedorInterno {
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.lodemicompa {
+    flex: 1;
+    margin: 35px;
+}
