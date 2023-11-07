@@ -1,14 +1,112 @@
-* final carrousel */
+
+/*  carrousel */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    height: auto;
+}
+/* final carrousel */
 
 /* Acessos rapidos */
 .acessos-raidos-title{
 
 color: #036595;
-
 text-align: center;
 margin-top: 4%;
 margin-bottom: 3%;
 }
 
+.carousel-container01 {
+position: relative;
+margin-top: 1% !important;
+width: 84%;
+overflow: hidden;
+margin: 0 auto;
+text-align: center; /* Centra horizontalmente */
+}
 
+.carousel {
+display: flex;
+transition: transform 0.5s;
+}
+
+.Acesso-rapidos-img {
+max-width: 100%;
+border-radius: 50%; /* Hace que la imagen sea redonda */
+border: 5px solid white; /* Agrega un borde blanco de 2px */
+text-decoration: none;
+}
+
+.carousel div {
+flex: 0 0 11%; /* Ajusta el ancho según tus necesidades */
+margin-left: 3%;
+margin-right: 3%;
+}
+
+.prev-button,
+.next-button {
+
+background-color: transparent;
+border: none;
+cursor: pointer;
+font-size: 24px; /* Tamaño de fuente personalizado */
+font-weight: bold;
+color: #036595; /* Color personalizado */
+position: absolute;
+top: 50%; /* Ajusta el 60% para centrar alrededor de esa altura */
+transform: translateY(-50%); /* Centra verticalmente alrededor del 60% */
+margin-top: 0; /* Elimina el margen superior previo */
+}
+
+.prev-button {
+left: 0;
+color: aliceblue;
+margin-left: 2%;
+
+}
+
+.next-button {
+right: 0;
+color: aliceblue;
+margin-right: 2%;
+}
+
+.conteiner-botton-ar {
+background-color: aliceblue;
+display: flex;
+justify-content: center; /* Centra horizontalmente */
+align-items: center; /* Centra verticalmente */
+}
+.ca{
+position: relative;
+width: 100%;
+overflow: hidden;
+margin: 0 auto;
+text-align: center;
+background-color: #0074b1;
+}
+
+
+
+@media (max-width: 768px) {
+.Acesso-rapidos-img {
+width: 50%; /* Ancho del 100% en pantallas más pequeñas */
+height: auto;
+}
+.carousel div {
+flex: 0 0 40%; /* Ajusta el ancho según tus necesidades */
+margin: 0 5%;
+}
+.carousel-container01{
+margin-top: 2%;
+}
+}
 /* Final Acessos rapidos */

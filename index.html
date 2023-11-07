@@ -217,111 +217,26 @@
                            
                          </nav>
   </div>
-<style>
-  .img-index{
-    max-width: 100%;
-  }
-  .img-icon-index{
-    position: relative;
-    align-items: center;
-  }
-</style>
-<!--END: NAVIGATION-->
-<div class="img-index">
-<img src="img/imagenes-de-prueba/banner-9-agua - copia.jpg">
-<div class="img-icon-index">
-<img src="img/LOGO SIN FONDO.png"><strong>aguas translasierras</strong>
+
+<!-- carrousrel img de fondo -->
+
+<div class="carousel-container">
+  <div class="carousel-slide">
+      <img src="img/imagenes-de-prueba/banner-9-agua - copia.jpg" alt="Imagen 1">
+  </div>
+  <div class="carousel-slide">
+      <img src="img/imagenes-de-prueba/banner-9-agua.jpg" alt="Imagen 2">
+  </div>
+  <div class="carousel-slide">
+      <img src="img/imagenes-de-prueba/banner-9-agua - copia.jpg" alt="Imagen 3">
+  </div>
 </div>
-</div>
-<!-- Carrousel banner -->
 
-    <!-- acessos rappidos-->
-    <style>
-.carousel-container01 {
-  position: relative;
-  margin-top: 2% !important;
-  width: 84%;
-  overflow: hidden;
-  margin: 0 auto;
-  text-align: center; /* Centra horizontalmente */
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s;
-}
-
-.Acesso-rapidos-img {
-  border-radius: 50%; /* Hace que la imagen sea redonda */
-  border: 5px solid white; /* Agrega un borde blanco de 2px */
-}
-
-.carousel div {
-  flex: 0 0 11%; /* Ajusta el ancho según tus necesidades */
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.prev-button,
-.next-button {
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 24px; /* Tamaño de fuente personalizado */
-  font-weight: bold;
-  color: #036595; /* Color personalizado */
-  position: absolute;
-  top: 50%; /* Ajusta el 60% para centrar alrededor de esa altura */
-  transform: translateY(-50%); /* Centra verticalmente alrededor del 60% */
-  margin-top: 0; /* Elimina el margen superior previo */
-}
-
-.prev-button {
-  left: 0;
-  color: aliceblue;
-  margin-left: 2%;
-  
-}
-
-.next-button {
-  right: 0;
-  color: aliceblue;
-  margin-right: 2%;
-}
-
-.conteiner-botton-ar {
-  background-color: aliceblue;
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-}
-.ca{
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #0074b1;
-}
-@media (max-width: 768px) {
-  .Acesso-rapidos-img {
-    width: 50%; /* Ancho del 100% en pantallas más pequeñas */
-    height: auto;
-  }
-  .carousel div {
-  flex: 0 0 40%; /* Ajusta el ancho según tus necesidades */
-  margin: 0 5%;
-}
-.carousel-container01{
-  margin-top: 2%;
-}
-
-}
-    </style>
-
+<p></p>
+<!-- Acessos rapidos -->
 <div class="ca">
-  <h1 class="acessos-raidos-title" style="font-weight: bold; color: rgb(255, 255, 255); font-size: 125%; margin-top: 2%;"><strong>ACESSOS RAPIDOS</strong></h1>
+  <h3 class="acessos-raidos-title" style="font-weight: bold; color: rgb(255, 255, 255); margin-top: 2%;">
+    <strong>ACESSOS RAPIDOS</strong></h3>
   <div class="conteiner-botton-ar">
       <button class="prev-button" aria-label="Anterior">
           <span>&lt;</span>
@@ -361,7 +276,7 @@
       <p><strong style="font-size: 16px ;color: rgb(255, 255, 255);">concientización</strong></p></a></div>
       
       <div><a href="SustySost.html"><img src="img/Iconos/susysos.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px ;color: rgb(255, 255, 255);">Sustentabilidad y sostenibilidad</strong></p></a></div> 
+      <p><strong class="accesos-ra-text" style="font-size: 16px ;color: rgb(255, 255, 255);">Sustentabilidad y sostenibilidad</strong></p></a></div> 
     
     </div>
 </div>
@@ -371,87 +286,231 @@
       </button>
   </div>
 </div>
+ 
+<style>
+  .noti-cont{
+    display: flex;
+  }
 
-  
+  .not-conteiner{
+    align-items: center;
+    background-color: rgb(205, 218, 255);
+    max-width: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .not-conteiner img{
+    align-items: center;
+    max-width: 96%;
+    margin-top: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+  }
 
-  <script>
-const carousel = document.querySelector('.carousel');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-const imageCount = carousel.children.length;
-let currentIndex = 0;
+  .titulo-not{
+    color: #036595; 
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 2%;
+  }
+</style>
+<!-- Noticias -->
+<h2 class="titulo-not"><strong>NOTICIAS</strong></h1>
 
-nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1.4) % imageCount;
-  updateCarousel();
-});
+<div class="noti-cont">
+<div class="not-conteiner">
+  <img src="img/imagenes-de-prueba/noticia.jpg">
+  <p>El mapa conceptual es un diagrama que ayuda a entender un tema en
+     especifico al visualizar las relaciones entre las ideas y conceptos.</p>
+</div>
+<div class="not-conteiner">
+  <img src="img/imagenes-de-prueba/noticia.jpg">
+  <p>El mapa conceptual es un diagrama que ayuda a entender un tema en
+     especifico al visualizar las relaciones entre las ideas y conceptos.</p>
+</div>
+<div class="not-conteiner">
+  <img src="img/imagenes-de-prueba/noticia.jpg">
+  <p>El mapa conceptual es un diagrama que ayuda a entender un tema en
+     especifico al visualizar las relaciones entre las ideas y conceptos.</p>
+</div>
+<div class="not-conteiner">
+  <img src="img/imagenes-de-prueba/noticia.jpg">
+  <p>El mapa conceptual es un diagrama que ayuda a entender un tema en
+     especifico al visualizar las relaciones entre las ideas y conceptos.</p>
+</div>
+</div>
 
-prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 2 + imageCount) % imageCount;
-  updateCarousel();
-});
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const newsContainers = document.querySelectorAll(".not-conteiner");
+    let currentNews = 0;
 
-function updateCarousel() {
-  const translateX = -currentIndex * 12; // 12% para cada imagen
-  carousel.style.transition = "transform 0.6s ease-in-out";
-  carousel.style.transform = `translateX(${translateX}%)`;
-
-  // Restablecer la transición después de que termine la animación
-  setTimeout(() => {
-    carousel.style.transition = "none";
-  }, 600);
- } // 0.4 segundos (ajusta según la duración de tu animación)
-
- // para las pantallas mas pequeñas
- if (window.matchMedia('(max-width: 768px)').matches) {
-  // Modifica el comportamiento en pantallas más pequeñas
-  nextButton.addEventListener('click', () => {
-    // Lógica diferente para pantallas más pequeñas
-    currentIndex = (currentIndex + 1) % imageCount; // Mover dos imágenes a la vez
-
-    if (currentIndex === 0) {
-      currentIndex = imageCount - 1; // Ir al penúltimo conjunto de dos imágenes al llegar al principio
+    function showNews(newsIndex) {
+        newsContainers[currentNews].style.display = "none";
+        currentNews = (newsIndex + newsContainers.length) % newsContainers.length;
+        newsContainers[currentNews].style.display = "block";
     }
-    updateCarousel();
-  });
 
-  nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % imageCount; // Mover una imagen a la vez
-  updateCarousel();
+    function nextNews() {
+        showNews(currentNews + 1);
+    }
+
+    function prevNews() {
+        showNews(currentNews - 1);
+    }
+
+    // Inicia el carrusel y configura los botones de navegación
+    showNews(currentNews);
+    document.getElementById("prevButton").addEventListener("click", prevNews);
+    document.getElementById("nextButton").addEventListener("click", nextNews);
 });
 
-prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + imageCount) % imageCount; // Mover una imagen a la vez
-  updateCarousel();
+</script>
+ 
 
-  
-    if (currentIndex === imageCount - 1) {
-      currentIndex = 2; // Ir al segundo conjunto de dos imágenes al llegar al final
-    }
-    updateCarousel();
-  });
-}
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="footer.css">
 
-  </script>
-
-<!--  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
-
-	<p>AAAAAAAAAAAAAAA</p>
-        <div class="page-content">
-            <h1>nose</h1>
-            <p>El capibara, chigüire o carpincho (Hydrochoerus hydrochaeris) 
-				[nota 1] es una especie de roedor de la familia de los cávidos,
-				 nativa de Sudamérica. Es el roedor viviente de mayor tamaño y peso</p>
-            <img src="imagen_pagina1.jpg" alt="Imagen de la página 1">
-        </div>
-        
-    <!-- pagina web -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odit possimus quos laboriosam officiis et fugit libero eum nemo commodi assumenda esse velit officia ipsa, aspernatur laudantium at illum in!</p>
-	<P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati soluta quasi saepe distinctio minima laboriosam, veniam asperiores accusantium praesentium omnis ut doloribus adipisci quo odit eius mollitia nemo repellat magnam?</P>
-
-
+<footer class="ct-footer">
+                <div class="container">
+                    <form name="contentForm" enctype="multipart/form-data" method="post" action="">
+                        <div class="ct-footer-pre text-center-lg">
+                            <div class="inner">
+                                <span>¡Bienvenido a Einat!</span>
+                            </div>
+                            <div class="inner">
+                                <div class="form-group">
+                                    <input name="formfields[nl_email]" id="nl_email" class="validate[required]"
+                                     placeholder="Ingrese su correo electronico" type="text" value="">
+                                      <label for="nl_email" class="sr-only">Email Address</label>
+                                       <button type="submit" class="btn btn-motive">log in</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="ct-footer-list text-center-sm">
+                        
+                        <li>
+                            <h2 class="ct-footer-list-header">
+                                Usuario
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">Como pagar tu factura</a>
+                                </li>
+                                <li>
+                                    <a href="">Conoce tu factura</a>
+                                </li>
+                                <li>
+                                    <a href="">Preguntas frecuentes</a>
+                                </li>
+                                <li>
+                                    <a href="">Información util</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                        <h2 class="ct-footer-list-header">
+                                Que hacemos
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">Calidad y control del agua
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">Servicios</a>
+                                </li>
+                                <li>
+                                    <a href="">Concientización</a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        <li>
+                          <h2 class="ct-footer-list-header">
+                              Proveedores
+                          </h2>
+                          <ul>
+                              <li>
+                                  <a href="">Como presentar tu facturapara cobrar</a>
+                              </li>
+                              <li>
+                                  <a href="">Contacto de compra</a>
+                              </li>
+                              
+                          </ul>
+                      </li>
+                        
+                        <li>
+                            
+                          <li>
+                            <h2 class="ct-footer-list-header">
+                                ¿Quienes somos?
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="">La empresa</a>
+                                </li>
+                                <li>
+                                    <a href="">Nuestra historia</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="ct-footer-meta text-center-sm">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-2">
+                                <img alt="logo" src="img/LOGO SIN FONDO.png" style="max-width: 100%">
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <ul class="ct-socials list-unstyled list-inline" >
+                                    <li>
+                                        <a href="" target="_blank"><img alt="facebook" style="max-width: 10%;"  src="img/Iconos/facebook.png">
+                                        <strong>facebook</strong></a>
+                                      </li>
+                                    
+                                    <li>
+                                        <a href="" target="_blank"><img alt="youtube" style="max-width: 10%;" src="img/Iconos/youtube.png">
+                                          <strong>youtube</strong></a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank"><img alt="instagram" style="max-width: 10%;"  src="img/Iconos/instagram.png">
+                                          <strong>instagram</strong></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ct-footer-post">
+                    <div class="container">
+                        <div class="inner-left">
+                            <ul>
+                                <li>
+                                    <a href="">Noticias</a>
+                                </li>
+                                <li>
+                                    <a href="">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-right">
+                            <p>
+                                Copyright © 2023 EINAT.&nbsp;<a href="">Privacy Policy</a>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </footer>
 	<!--<script src="ArchivosLenguajes/js/index.js"></script>
 	<script src="ArchivosLenguajes/slick-1.8.1/slick/slick.js"></script>
 	
