@@ -1,4 +1,6 @@
-
+body{
+    background-color: #ffffff;
+}
 /*  carrousel */
 .carousel-container {
     width: 100%;
