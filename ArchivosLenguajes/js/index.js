@@ -10,7 +10,7 @@ nextButton.addEventListener('click', () => {
 });
 
 prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 2 + imageCount) % imageCount;
+  currentIndex = (currentIndex - 1.4 + imageCount) % imageCount;
   updateCarousel();
 });
 

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-custom.css">
     <link rel="stylesheet" href="ArchivosLenguajes/css/estilosindex.css">
     <link rel="stylesheet" href="ArchivosLenguajes/css/acessosrapidos.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
   </head>
 <body>
 <style></style>
@@ -299,10 +301,10 @@
   .not-conteiner{
     border-radius: 10%;
     align-items: center;
-    background-color: rgb(205, 218, 255);
     max-width: 20%;
     margin-left: 2%;
     margin-right: 2%;
+    border: 2px solid #036595; 
   }
   .not-conteiner:hover{
     -webkit-transform: scale(1.1);
@@ -312,10 +314,10 @@ transform: scale(1.1);
   .not-conteiner img{
     border-radius: 10%;
     align-items: center;
-    max-width: 96%;
+    max-width: 92%;
     margin-top: 4%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
     margin-bottom: 4%;
   }
 
@@ -326,13 +328,15 @@ transform: scale(1.1);
     text-decoration: none;
   }
 
-
+ p{
+  color: #036595;
+ }
 
   .titulo-not{
     color: #036595; 
     text-align: center;
-    margin-top: 8%;
-    margin-bottom: 3%;
+    margin-top: 1%;
+    margin-bottom: 2%;
   }
   .color:hover
 {
@@ -346,10 +350,10 @@ background:#53a7ea;
 <div class="not-conteiner"><a href="" style="text-decoration: none;">
   <img src="img/imagenes-de-prueba/noticia.jpg">
   <div class="text-contenedor-not">
+    <strong>OBRAS EN CONSTRUCIÓN</strong>
   <p>El mapa conceptual es un diagrama que ayuda a entender un tema en
-     especifico al visualizar las relaciones entre las ideas y conceptos.
-     <br>
-     <strong>Ver más ></strong><br></p></div></a>
+     al visualizar las relaciones entre las ideas y conceptos.
+     <br><strong>Ver más ></strong><br></p></a></div>
 </div>
 <div class="not-conteiner"><a href="" style="text-decoration: none;">
   <img src="img/imagenes-de-prueba/noticia.jpg">
@@ -357,7 +361,7 @@ background:#53a7ea;
   <p>El mapa conceptual es un diagrama que ayuda a entender un tema en
      especifico al visualizar las relaciones entre las ideas y conceptos.
      <br>
-     <strong>Ver más ></strong><br></p></div></a>
+     <strong>Ver más ></strong><br></p></a></div>
 </div>
 <div class="not-conteiner"><a href="" style="text-decoration: none;">
   <img src="img/imagenes-de-prueba/noticia.jpg">
@@ -382,7 +386,101 @@ background:#53a7ea;
 <script>
 
 </script>
+ <style>.display-5{font-size:calc(1.425rem + 2.1vw);
+  font-weight:300;line-height:1.2}@media (min-width:1200px){.display-5{font-size:3rem}}</style>
+<main>
+  <section style="background-color: #036595;">
+      <div class="container text-white py-3 py-lg-5">
+          <div class="row">
+              <div class="col-12 col-lg-6 col-xl-6">
+                  <h1 class="display-5"  >NOTICIAS</h1>
+                  <h2>Aquí encontraras las novedades en los proyectos que estamos realizando</h2>
+                  <p class="lead" style="color: antiquewhite;">
+                      Buscamos mejorar la calidad de nuestros servicios y concientizar sobre
+                       la importancia del agua...
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Voluptates autem incidunt quidem dolor. Recusandae ducimus non quos tenetur tempora fuga nulla cupiditate,
+                        quisquam voluptate sint nostrum, saepe rem impedit provident?
+                  </p>
+              </div>
+              <div class="col"></div>
+              <div class="col-12 col-lg-5 py-xl-5">
+                  <div class="swiffy-slider h-100 slider-item-reveal slider-indicators-outside slider-indicators-round
+                   slider-nav-outside-expand
+                   slider-nav-visible slider-nav-animation slider-nav-animation-scale" data-slider-nav-animation-threshold="0.4">
+                      <ul class="slider-container text-dark py-4" tabindex="-1" style="outline: none;" id="swiffyBenefits">
+                          <li>
+                              <div class="card border-0 h-100 shadow">
+                                  <img src="img/imagenes-de-prueba/noticia.jpg" class="card-img-top mt-2" style="height: 20rem;" alt="Feature rich">
+                                  <div class="card-body p-2 p-lg-3">
+                                      <h3 class="titulo-not"><strong>Obras en construción</strong></h3>
+                                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                         Natus dolorem accusamus porro consectetur quo impedit sit neque quaerat alias
+                                        <br><a href="" style="color: #036595;"><strong>ver más...</strong></a><br></p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="card border-0 h-100 shadow">
+                                <img src="img/imagenes-de-prueba/noticia2.png" class="card-img-top mt-2" style="height: 20rem;" alt="Feature rich">
+                                <div class="card-body p-2 p-lg-3">
+                                    <h3 class="titulo-not"><strong>Nuevos programas educativos</strong></h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                      Natus dolorem accusamus porro consectetur quo impedit sit neque quaerat alias
+                                     <br><a href="" style="color: #036595;"><strong>ver más...</strong></a><br></p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="card border-0 h-100 shadow">
+                                  <img src="img/imagenes-de-prueba/noticia4m.png" class="card-img-top mt-2" style="height: 20rem;" alt="Setup using markup">
+                                  <div class="card-body p-2 p-lg-3">
+                                    <h3 class="titulo-not"><strong>Nuevos metodos de pago</strong></h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                      Natus dolorem accusamus porro consectetur quo impedit sit neque quaerat alias
+                                     <br><a href="" style="color: #036595;"><strong>ver más...</strong></a><br></p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="card border-0 h-100 shadow">
+                                  <img src="img/imagenes-de-prueba/noticia3pozoz.jpg" class="card-img-top mt-2" style="height: 20rem;" alt="Lightweight and fast javascript">
+                                  <div class="card-body p-2 p-lg-3">
+                                    <h3 class="titulo-not"><strong>Inauguracion de pozos</strong></h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                      Natus dolorem accusamus porro consectetur quo impedit sit neque quaerat alias
+                                     <br><a href="" style="color: #036595;"><strong>ver más...</strong></a><br></p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="card border-0 h-100 shadow">
+                                  <img src="img/imagenes-de-prueba/noticia5.jpg" class="card-img-top mt-2" style="height: 20rem;" alt="Lightweight and fast javascript">
+                                  <div class="card-body p-2 p-lg-3">
+                                    <h3 class="titulo-not"><strong>Einat se encuentra en Alerta</strong></h3>
+                                    <p class="card-text">La compañía informó que el suministro de agua potable hacia los hogares opera con normalidad y que ha activado su plan de continuidad operaciona
+                                    <br><a href="" style="color: #036595;"><strong>ver más...</strong></a><br></p>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                      <button type="button" class="slider-nav" aria-label="Go to previous"></button>
+                      <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
+                      <ul class="slider-indicators">
+                          <li class="active"></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
  
+</main>
 
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
