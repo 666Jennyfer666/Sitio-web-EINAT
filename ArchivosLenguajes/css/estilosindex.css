@@ -112,3 +112,17 @@ margin-top: 2%;
 }
 }
 /* Final Acessos rapidos */
+
+/* noticias */
+
+p{
+    color: #000000;
+}
+.titulo-not{
+color: #036595; 
+text-align: center;
+margin-top: 1%;
+margin-bottom: 2%;
+}
+
+/*final noticias*/
