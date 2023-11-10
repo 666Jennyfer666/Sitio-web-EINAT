@@ -14,6 +14,14 @@
     border-radius: 10px; /* Borde redondeado */
 }
 
+.contenedorAzulaAzulClaro {
+    margin: 20px;
+    padding: 10px; /* Agrega relleno para separar el contenido de los bordes */
+    display: flex;
+    background: linear-gradient(to right, #a7e0f8, #5a55a185); /* Degradado de azul oscuro a azul pastel */
+    border-radius: 10px; /* Borde redondeado */
+}
+
 .contenedorInterno {
     margin-left: 15px;
     padding: 10px;
