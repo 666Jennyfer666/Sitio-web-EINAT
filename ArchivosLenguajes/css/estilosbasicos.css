@@ -472,14 +472,14 @@
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .menu-mega-main-div-c {
-        max-width: 100% !important; /* El contenido no se hará más ancho que la pantalla */
+        max-width: 100% !important; 
         width: 100% !important;
         overflow: hidden;
     }
   
-  }
+  }*/
 
 
   /* footer */
