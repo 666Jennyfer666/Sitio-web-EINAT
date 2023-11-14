@@ -268,8 +268,7 @@
 }
 
 .contenedor-text{
-  columns: 200px 2;
-  column-gap: 30px;
+  
   padding: 15px;
 }
 
@@ -278,49 +277,41 @@
   display: block;
 }
 
-h4{
+h2{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   
 }
 .susysostitulo{
-  margin-top: 8%;
-  margin-bottom: 8%;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
+.contenedor-text-uno{
+  columns: 2;
+  column-gap: 20px;
+  padding: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
 
-.neon-text {
-  font-family: 'Arial', sans-serif;
-  font-size: 3em;
-  color: #fff; /* Color del texto blanco */
+}
+.title-text-uno{
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  animation: neon-glow 6s ease-in-out infinite alternate;
-  text-shadow: 0 0 5px #0077ff, 0 0 10px #0077ff, 0 0 20px #0077ff, 0 0 40px #0077ff, 0 0 80px #0077ff, 0 0 90px #0077ff, 0 0 100px #0077ff, 0 0 150px #0077ff;
 }
-
-@keyframes neon-glow {
-  from {
-    text-shadow: 0 0 10px #0077ff, 0 0 20px #0077ff, 0 0 30px #0077ff, 0 0 40px #0077ff, 0 0 70px #0077ff, 0 0 80px #0077ff, 0 0 100px #0077ff, 0 0 150px #0077ff;
-  }
-  to {
-    text-shadow: 0 0 20px #0077ff, 0 0 30px #0077ff, 0 0 40px #0077ff, 0 0 50px #0077ff, 0 0 80px #0077ff, 0 0 90px #0077ff, 0 0 110px #0077ff, 0 0 160px #0077ff;
-  }
-}
-
-@media (max-width: 768px){
-  .neon-text{
-    font-size: 2em;
-  }
-}
-
 </style>
-
-
-
 <div class="susysostitulo">
-<h4 class="neon-text"><strong>SOSTENIBILIDAD Y SUSTENTABILIDAD</strong> </h4>
+<h2 class=""><strong>SOSTENIBILIDAD Y SUSTENTABILIDAD</strong> </h2>
 </div>
+
+<div class="contenedor-text-uno">
+  <!--<h4 class="title-text-uno" ><strong>EINAT</strong></h4>-->
+    <p>La sustentabilidad y sostenibilidad en una empresa de agua son fundamentales debido a la naturaleza 
+      crítica del recurso que manejan. La preservación de este recurso es esencial para garantizar la continuidad
+       de la vida y el bienestar de las comunidades a las que servimos. Una gestión responsable, que minimice el impacto ambiental, promueva la eficiencia en el uso del agua y fomente prácticas sostenibles, no solo asegura la calidad del recurso para generaciones futuras, sino que también fortalece la reputación de la empresa, genera confianza en los consumidores y contribuye al equilibrio medioambiental global. Esta empresa reconoce su responsabilidad en la conservación del agua y se compromete a operar de manera sostenible, implementando estrategias
+       innovadoras que no solo salvaguardan el recurso, sino que también generan un impacto positivo en
+        la comunidad y el entorno en el que opera.
+    </p>
+</div>
+
 
 <div class="contenedor-susysos">
 <div class="imagensusysos">
@@ -340,26 +331,217 @@ h4{
 </div>
 
 <style>
-  .c-tips{
-    max-width: 30%;
-  }
+.c-tips {
+  max-width: 22%;
+  margin-left: 8%; /* Ajustando el margen para dejar más espacio */
+}
 
-  .c-tips img{
-    max-width: 90%;
+.c-tips h4{
+margin-right: 10%;
+}
+.c-tips img {
+  max-width: 100%; /* Cambiado de 70% a 100% para adaptarse mejor en tamaños más pequeños */
+}
+
+.conteiner-div-tip {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten al ancho del contenedor */
+}
+
+/* Media query para dos columnas en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .c-tips {
+    max-width: 48%; /* Cambiamos el ancho para que se muestren dos elementos por fila */
+    margin-left: 2%; /* Ajustamos el margen para dar espacio entre los elementos */
   }
+  .c-tips img{
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+.consejostitle{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
 </style>
 
-<h4 class="" style="margin-top: 5%; margin-bottom: 5%;"><strong>CONSEJOS</strong></h4>
+<h4 class="consejostitle"><strong>CONSEJOS</strong></h4>
 
-<div class="">
+<div class="conteiner-div-tip" style="margin-bottom: 10%;">
   <div class="c-tips">
     <img src="img/susysos/jardineriaconciente.png">
     <h4>Jardineria Conciente</h4>
-    <p>: Utiliza técnicas de jardinería que conserven el agua, como el mulching 
+    <p>Utiliza técnicas de jardinería que conserven el agua, como el mulching 
       (cubrir la tierra con material orgánico) para reducir la evaporación y mantener la humedad del suelo.
     </p>
   </div>
+  <div class="c-tips">
+    <img src="img/susysos/ducha.png">
+    <h4>Reducción del consumo</h4>
+    <p>Instala dispositivos de bajo 
+      flujo en grifos y duchas para reducir el uso de agua. Arregla las fugas tan pronto como las detectes.
+    </p>
+  </div>
+  <div class="c-tips">
+    <img src="img/susysos/cepillalosdientes.png">
+    <h4>Cultura de ahorro</h4>
+    <p>Enseña a cerrar los grifos mientras nos
+       cepillamos los dientes o lavamos los platos, son pequeños gestos que ahorran grandes cantidades de agua.
+    </p>
+  </div>
+
+  <div class="c-tips">
+    <img src="img/susysos/consumoresponsable.png">
+    <h4>Consumo responsable</h4>
+    <p>Apoya marcas y productos que sean conscientes 
+      en el uso del agua en su producción y que implementen medidas para reducir su impacto en este recurso.
+    </p>
+  </div>
+  <div class="c-tips">
+    <img src="img/susysos/apoyoapoliticassos.png">
+    <h4>Apoyo a políticas sostenibles</h4>
+    <p>Participa en iniciativas ciudadanas que promuevan políticas públicas 
+      a favor de la conservación del agua, como regulaciones para la gestión responsable de recursos hídricos.</p>
+  </div>
+  <div class="c-tips">
+    <img src="img/susysos/gestiondedesechos.png">
+    <h4>Gestión de desechos</h4>
+    <p>Reducir la contaminación del agua evitando el vertido ilegal de desechos y promoviendo la gestión adecuada de productos 
+      químicos y residuos sólidos que podrían afectar la calidad del agua.</p>
+  </div>
 </div>
+
+<footer class="ct-footer">
+  <div class="container">
+      <form name="contentForm" enctype="multipart/form-data" method="post" action="">
+          <div class="ct-footer-pre text-center-lg">
+              <div class="inner">
+                  <span style="margin-left: 35%;">¡Bienvenido a Einat!</span>
+              </div>
+              
+          </div>
+      </form>
+      <ul class="ct-footer-list text-center-sm">
+          
+          <li>
+              <h2 class="ct-footer-list-header">
+                  Usuario
+              </h2>
+              <ul>
+                  <li>
+                      <a href="">Como pagar tu factura</a>
+                  </li>
+                  <li>
+                      <a href="">Conoce tu factura</a>
+                  </li>
+                  <li>
+                      <a href="">Preguntas frecuentes</a>
+                  </li>
+                  <li>
+                      <a href="">Información util</a>
+                  </li>
+                  
+              </ul>
+          </li>
+          <li>
+          <h2 class="ct-footer-list-header">
+                  Que hacemos
+              </h2>
+              <ul>
+                  <li>
+                      <a href="">Calidad y control del agua
+                      </a>
+                  </li>
+                  <li>
+                      <a href="">Servicios</a>
+                  </li>
+                  <li>
+                      <a href="">Concientización</a>
+                  </li>
+                
+              </ul>
+          </li>
+          <li>
+            <h2 class="ct-footer-list-header">
+                Proveedores
+            </h2>
+            <ul>
+                <li>
+                    <a href="">Como presentar tu facturapara cobrar</a>
+                </li>
+                <li>
+                    <a href="">Contacto de compra</a>
+                </li>
+                
+            </ul>
+        </li>
+          
+          <li>
+              
+            <li>
+              <h2 class="ct-footer-list-header">
+                  ¿Quienes somos?
+              </h2>
+              <ul>
+                  <li>
+                      <a href="">La empresa</a>
+                  </li>
+                  <li>
+                      <a href="">Nuestra historia</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+      <div class="ct-footer-meta text-center-sm">
+          <div class="row">
+              <div class="col-sm-6 col-md-2">
+                  <img alt="logo" src="img/LOGO SIN FONDO.png" style="max-width: 100%;">
+              </div>
+              <div class="col-sm-6 col-md-3" style="margin-left: 85%;">
+                  <ul class="ct-socials list-unstyled list-inline" >
+                      <li>
+                          <a href="" target="_blank"><img alt="facebook" style="max-width: 10%;"  src="img/Iconos/facebook.png">
+                          <strong>facebook</strong></a>
+                        </li>
+                      
+                      <li>
+                          <a href="" target="_blank"><img alt="youtube" style="max-width: 10%;" src="img/Iconos/youtube.png">
+                            <strong>youtube</strong></a>
+                      </li>
+                      <li>
+                          <a href="" target="_blank"><img alt="instagram" style="max-width: 10%;"  src="img/Iconos/instagram.png">
+                            <strong>instagram</strong></a>
+                      </li>
+                      
+                  </ul>
+              </div>
+
+            </div>
+      </div>
+  </div>
+  <div class="ct-footer-post">
+      <div class="container">
+          <div class="inner-left">
+              <ul>
+                  <li>
+                      <a href="">Noticias</a>
+                  </li>
+                  <li>
+                      <a href="">Contacto</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="inner-right">
+              <p>
+                  Copyright © 2023 EINAT.&nbsp;<a href="">Privacy Policy</a>
+              </p>
+              
+          </div>
+      </div>
+  </div>
+</footer>
 
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">        
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
