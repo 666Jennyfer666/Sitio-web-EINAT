@@ -88,7 +88,7 @@ header{
     .carousel-caption-slider h2 span{
       padding: 3px 15px;
       color: #ffffff;
-      background-color: #e0c473;
+      background-color: #133cc2;
     }
 
   .carousel-caption-slider p{
@@ -362,15 +362,15 @@ header{
     letter-spacing: 1px;
     padding: 13px 30px;
     border-radius: 6px;
-    color: #5caedb;
-    background-color: #ffffff;
-    border-color: #ffffff;
-    box-shadow: 0 1rem 3rem rgba(92,174,219,.2) !important;
+    color: white;
+    background-color: #0b6596;
+    border-color: #0b6596;
+    box-shadow: 0 1rem 3rem rgba(81, 112, 129, 0.2) !important;
   }
     .btn-outline-02:hover {
-      color: #fff;
-      background-color: #5caedb;
-      border-color: #5caedb;
+      color: black;
+      background-color: #a9b8ff;
+      border-color: #a9b8ff;
     }
     .btn-check:focus + .btn-outline-02, .btn-outline-02:focus {
       box-shadow: 0 0 0 0.25rem rgba(92,174,219, 0.5);
@@ -1924,7 +1924,7 @@ footer{
         .carousel-caption-slider h2 span{
           padding: 3px 15px;
           color: #ffffff;
-          background-color: #e0c473;
+          background-color: #133cc2;
         }
 
       .carousel-caption-slider p{
