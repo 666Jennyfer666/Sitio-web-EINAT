@@ -226,7 +226,7 @@
 <div class="jumbotron jumbotron-center jumbotron-fullwidth background-colored bg-textura-contacto
  text-light m-b-0 " style="background-color: rgb(32, 138, 156);">
   <div class="container text-center">
-    <a href="/CanalContacto/16/Contacto"><h3 class="" style="color: rgb(255, 255, 255);"><strong>CONTACTO</strong></h3>	</a>			
+    <a href="/CanalContacto/16/Contacto"><h3 class="" style="color: black;"><strong>CONTACTO</strong></h3>	</a>			
   </div>
 </div>
 <section class="m-b-20 m-t-0 p-t-0">
@@ -297,137 +297,195 @@
   bottom: 0; 
   margin-bottom: -15px;
  }
+
 </style>
 
-<footer class="ct-footer">
-  <div class="container">
-      <form name="contentForm" enctype="multipart/form-data" method="post" action="">
-          <div class="ct-footer-pre text-center-lg">
-              <div class="inner">
-                  <span style="margin-left: 35%;">¡Bienvenido a Einat!</span>
-              </div>
-              
-          </div>
-      </form>
-      <ul class="ct-footer-list text-center-sm">
-          
-          <li>
-              <h2 class="ct-footer-list-header">
-                  Usuario
-              </h2>
-              <ul>
-                  <li>
-                      <a href="">Como pagar tu factura</a>
-                  </li>
-                  <li>
-                      <a href="">Conoce tu factura</a>
-                  </li>
-                  <li>
-                      <a href="">Preguntas frecuentes</a>
-                  </li>
-                  <li>
-                      <a href="">Información util</a>
-                  </li>
-                  
-              </ul>
-          </li>
-          <li>
-          <h2 class="ct-footer-list-header">
-                  Que hacemos
-              </h2>
-              <ul>
-                  <li>
-                      <a href="">Calidad y control del agua
-                      </a>
-                  </li>
-                  <li>
-                      <a href="">Servicios</a>
-                  </li>
-                  <li>
-                      <a href="">Concientización</a>
-                  </li>
-                
-              </ul>
-          </li>
-          <li>
-            <h2 class="ct-footer-list-header">
-                Proveedores
-            </h2>
-            <ul>
-                <li>
-                    <a href="">Como presentar tu facturapara cobrar</a>
-                </li>
-                <li>
-                    <a href="">Contacto de compra</a>
-                </li>
-                
-            </ul>
-        </li>
-          
-          <li>
-              
-            <li>
-              <h2 class="ct-footer-list-header">
-                  ¿Quienes somos?
-              </h2>
-              <ul>
-                  <li>
-                      <a href="">La empresa</a>
-                  </li>
-                  <li>
-                      <a href="">Nuestra historia</a>
-                  </li>
-              </ul>
-          </li>
-      </ul>
-      <div class="ct-footer-meta text-center-sm">
-          <div class="row">
-              <div class="col-sm-6 col-md-2">
-                  <img alt="logo" src="img/LOGO SIN FONDO.png" style="max-width: 100%;">
-              </div>
-              <div class="col-sm-6 col-md-3" style="margin-left: 85%;">
-                  <ul class="ct-socials list-unstyled list-inline" >
-                      <li>
-                          <a href="" target="_blank"><img alt="facebook" style="max-width: 10%;"  src="img/Iconos/facebook.png">
-                          <strong>facebook</strong></a>
-                        </li>
-                      
-                      <li>
-                          <a href="" target="_blank"><img alt="youtube" style="max-width: 10%;" src="img/Iconos/youtube.png">
-                            <strong>youtube</strong></a>
-                      </li>
-                      <li>
-                          <a href="" target="_blank"><img alt="instagram" style="max-width: 10%;"  src="img/Iconos/instagram.png">
-                            <strong>instagram</strong></a>
-                      </li>
-                      
-                  </ul>
-              </div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-            </div>
-      </div>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --color-esqueleto:#EFF3F5;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: var(--color-esqueleto);
+}
+
+.cover{
+    width: 100%;
+    height: 500px;
+    background: var(--color-esqueleto);
+    margin-top: 20px;
+}
+
+.container__article{
+    max-width: 1000px;
+    padding: 0px 20px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container__article .box__article{
+    width: 200px;
+    height: 250px;
+    background: var(--color-esqueleto);
+    margin: 20px;
+}
+
+/*Aquí debajo va el FOOTER*/
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+    
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+</style>
+
+<!-- Contenido de la página -->
+
+<div class="body__Page">
+  <div class="cover"></div>
+  <div class="container__article">
+      <div class="box__article"></div>
+      <div class="box__article"></div>
+      <div class="box__article"></div>
+      <div class="box__article"></div>
+      <div class="box__article"></div>
+      <div class="box__article"></div>
+      <div class="box__article"></div>
+      <div class="box__article"></div>
   </div>
-  <div class="ct-footer-post">
-      <div class="container">
-          <div class="inner-left">
-              <ul>
-                  <li>
-                      <a href="">Noticias</a>
-                  </li>
-                  <li>
-                      <a href="">Contacto</a>
-                  </li>
-              </ul>
+</div>
+
+<footer>
+
+  <div class="container__footer">
+      <div class="box__footer">
+          <div class="logo">
+              <img src="Images/logo-magtimus.png" alt="">
           </div>
-          <div class="inner-right">
-              <p>
-                  Copyright © 2023 EINAT.&nbsp;<a href="">Privacy Policy</a>
-              </p>
-              
+          <div class="terms">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
           </div>
       </div>
+      <div class="box__footer">
+          <h2>Soluciones</h2>
+          <a href="https://www.google.com">App Desarrollo</a>
+          <a href="#">App Marketing</a>
+          <a href="#">IOS Desarrollo</a>
+          <a href="#">Android Desarrollo</a>
+      </div>
+
+      <div class="box__footer">
+          <h2>Compañia</h2>
+          <a href="#">Acerca de</a>
+          <a href="#">Trabajos</a>
+          <a href="#">Procesos</a>
+          <a href="#">Servicios</a>              
+      </div>
+
+      <div class="box__footer">
+          <h2>Redes Sociales</h2>
+          <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+          <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+          <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+      </div>
+
+  </div>
+
+  <div class="box__copyright">
+      <hr>
+      <p>Todos los derechos reservados © 2021 <b>MagtimusPro</b></p>
   </div>
 </footer>
+
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> 
 
 </body>

@@ -220,23 +220,112 @@
 
 <!-- carrousrel img de fondo 2 -->
 
-<div class="carousel-container">
-  <div class="carousel-slide">
-      <img src="img/imagenes-de-prueba/banner-9-agua - copia.jpg" alt="Imagen 1">
-  </div>
-  <div class="carousel-slide">
-      <img src="img/imagenes-de-prueba/banner-9-agua.jpg" alt="Imagen 2">
-  </div>
-  <div class="carousel-slide">
-      <img src="img/imagenes-de-prueba/banner-9-agua - copia.jpg" alt="Imagen 3">
-  </div>
-</div>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        line-height: 1.6;
+        font-family: 'Poppins', sans-serif;
+    }
+    .promo{
+        padding-top: 250px;
+        margin-right: 70%;
+        display: flex;
+        margin-left: 20%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+        position: relative;
+        z-index: 2;
+    }
+.promo h1{
+    font-size: 3.5rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+.promo p {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(34, 107, 170);
+}
+
+    #hero{
+        min-height: 100vh;
+        position: relative;
+
+    }
+    video{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .capa{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #1c1c1d;
+        opacity: 0.5;
+        mix-blend-mode: overlay;
+    }
+    /* Estilos generales para pantallas más pequeñas */
+body {
+  margin: 0 0 0 0;
+}
+
+/* Media query para pantallas más grandes y orientación horizontal */
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  body {
+    margin: 0 0 0 0;
+  }
+  footer{
+    max-width: 100%;
+  }
+  nav {
+    max-width:100%;
+  }
+}
+
+/* Otra media query para pantallas aún más grandes y resolución alta */
+@media screen and (min-width: 1200px) and (min-resolution: 300dpi) {
+  body {
+    margin: 0 0 0 0;
+  }
+}
+
+#letratiyulo{
+    color: #036595;
+}
+</style>
+<main id="hero">
+    <div class="promo">
+        <div style="display: flex;">
+        <h1>E</h1>
+        <h1>I</h1>
+        <h1 id="letratiyulo">N</h1>
+        <h1>A</h1>
+        <h1>T</h1></div>
+        <p>(eslogan de einat)</p>
+    </div>
+    <video muted autoplay loop>
+        <source src="img/videos/indexvasoagua.mp4" type="video/mp4">
+    </video>
+    <div class="capa"> hh</div>
+</main>
 
 <!-- fin del carroucel -->
 
 <!-- Acessos rapidos -->
 <div class="ca">
-  <h3 class="acessos-raidos-title" style="font-weight: bold; color: rgb(255, 255, 255); margin-top: 5%;">
+  <h3 class="acessos-raidos-title" style="font-weight: bold; color: rgb(255, 255, 255); margin-top: 5%; margin-bottom: 3%;">
     <strong>ACCESOS RÁPIDOS</strong></h3>
   <div class="conteiner-botton-ar">
       <button class="prev-button" aria-label="Anterior">
@@ -249,32 +338,32 @@
       <div>
           <a href="calid-contr-agua.html">
               <img src="img/Iconos/calidadycontrol.index.png" alt="Imagen 1" class="Acesso-rapidos-img">
-              <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">Calidad y Control del Agua</strong></p>
+              <p style="margin-top: 10%;"><strong style="font-size: 16px; color: rgb(255, 255, 255);">Calidad y Control del Agua</strong></p>
           </a>
       </div>
       <div><a href="conoce-factura.html"><img src="img/Iconos/conocetufactura.index.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">Conocé tu Factura</strong></p></a></div>
+      <p style="margin-top: 10%;"><strong style="font-size: 16px; color: rgb(255, 255, 255);">Conocé tu Factura</strong></p></a></div>
 
       <div><a href="info-util.html"><img src="img/Iconos/infoutil.index.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">Información Útil</strong></p></a></div>
+      <p style="margin-top: 10%;"><strong style="font-size: 16px; color: rgb(255, 255, 255);">Información Útil</strong></p></a></div>
 
       <div><a href="contacto.html"><img src="img/Iconos/contacto.index.png" alt="Imagen 1" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">Contacto</strong></p></a></div>
+      <p style="margin-top: 10%;"><strong style="font-size: 16px; color: rgb(255, 255, 255);">Contacto</strong></p></a></div>
 
       <div><a href="educacionCongresoDelAgua.html"><img src="img/Iconos/congresodelagua.index.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px;color: rgb(255, 255, 255);">Congreso del Agua</strong></p></a></div>
+      <p style="margin-top: 10%;"><strong style="font-size: 16px;color: rgb(255, 255, 255);">Congreso del Agua</strong></p></a></div>
       
       <div><a href="servicios.html"><img src="img/Iconos/servicio.index.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">Servicios</strong></p></a></div>
+      <p style="margin-top: 10%;"><strong style="font-size: 16px; color: rgb(255, 255, 255);">Servicios</strong></p></a></div>
 
       <div><a href="educacion.html"><img src="img/Iconos/educaion.index.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px; color: rgb(255, 255, 255);">Educación</strong></p></a></div>
+      <p style="margin-top: 10%;"><strong style="font-size: 16px; color: rgb(255, 255, 255);">Educación</strong></p></a></div>
 
       <div><a href="concientizacion.html"><img src="img/Iconos/concientizacion-index.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong style="font-size: 16px ;color: rgb(255, 255, 255);">Concientización</strong></p></a></div>
+      <p style="margin-top: 10%;"><strong style="font-size: 16px ;color: rgb(255, 255, 255);">Concientización</strong></p></a></div>
       
       <div><a href="SustySost.html"><img src="img/Iconos/susysos.index.png" alt="Imagen 3" class="Acesso-rapidos-img"></h3>
-      <p><strong class="accesos-ra-text" style="font-size: 16px ;color: rgb(255, 255, 255);">Sustentabilidad y Sostenibilidad</strong></p></a></div> 
+      <p style="margin-top: 10%;"><strong class="accesos-ra-text" style="font-size: 16px ;color: rgb(255, 255, 255);">Sustentabilidad y Sostenibilidad</strong></p></a></div> 
     
     </div>
 </div>
@@ -464,141 +553,52 @@
     </div>
 </div>
 
-<footer class="ct-footer">
-                <div class="container">
-                    <form name="contentForm" enctype="multipart/form-data" method="post" action="">
-                        <div class="ct-footer-pre text-center-lg">
-                            <div class="inner">
-                                <span style="margin-left: 35%;">¡Bienvenido a Einat!</span>
-                            </div>
-                            
-                        </div>
-                    </form>
-                    <ul class="ct-footer-list text-center-sm">
-                        
-                        <li>
-                            <h2 class="ct-footer-list-header">
-                                Usuario
-                            </h2>
-                            <ul>
-                                <li>
-                                    <a href="">Como pagar tu factura</a>
-                                </li>
-                                <li>
-                                    <a href="">Conoce tu factura</a>
-                                </li>
-                                <li>
-                                    <a href="">Preguntas frecuentes</a>
-                                </li>
-                                <li>
-                                    <a href="">Información util</a>
-                                </li>
-                                
-                            </ul>
-                        </li>
-                        <li>
-                        <h2 class="ct-footer-list-header">
-                                Que hacemos
-                            </h2>
-                            <ul>
-                                <li>
-                                    <a href="">Calidad y control del agua
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">Servicios</a>
-                                </li>
-                                <li>
-                                    <a href="">Concientización</a>
-                                </li>
-                              
-                            </ul>
-                        </li>
-                        <li>
-                          <h2 class="ct-footer-list-header">
-                              Proveedores
-                          </h2>
-                          <ul>
-                              <li>
-                                  <a href="">Como presentar tu facturapara cobrar</a>
-                              </li>
-                              <li>
-                                  <a href="">Contacto de compra</a>
-                              </li>
-                              
-                          </ul>
-                      </li>
-                        
-                        <li>
-                            
-                          <li>
-                            <h2 class="ct-footer-list-header">
-                                ¿Quienes somos?
-                            </h2>
-                            <ul>
-                                <li>
-                                    <a href="">La empresa</a>
-                                </li>
-                                <li>
-                                    <a href="">Nuestra historia</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="ct-footer-meta text-center-sm">
-                        <div class="row">
-                            <div class="col-sm-6 col-md-2">
-                                <img alt="logo" src="img/LOGO SIN FONDO.png" style="max-width: 100%;">
-                            </div>
-                            <div class="col-sm-6 col-md-3" style="margin-left: 85%;">
-                                <ul class="ct-socials list-unstyled list-inline" >
-                                    <li>
-                                        <a href="" target="_blank"><img alt="facebook" style="max-width: 10%;"  src="img/Iconos/facebook.png">
-                                        <strong>facebook</strong></a>
-                                      </li>
-                                    
-                                    <li>
-                                        <a href="" target="_blank"><img alt="youtube" style="max-width: 10%;" src="img/Iconos/youtube.png">
-                                          <strong>youtube</strong></a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank"><img alt="instagram" style="max-width: 10%;"  src="img/Iconos/instagram.png">
-                                          <strong>instagram</strong></a>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-       
-                          </div>
-                    </div>
-                </div>
-                <div class="ct-footer-post">
-                    <div class="container">
-                        <div class="inner-left">
-                            <ul>
-                                <li>
-                                    <a href="">Noticias</a>
-                                </li>
-                                <li>
-                                    <a href="">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="inner-right">
-                            <p>
-                                Copyright © 2023 EINAT.&nbsp;<a href="">Privacy Policy</a>
-                            </p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </footer>
+<footer>
+
+    <div class="container__footer">
+        <div class="box__footer">
+            <div class="logo">
+                <img src="img/LOGO SIN FONDO.png" alt="">
+            </div>
+            <div class="terms">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
+            </div>
+        </div>
+        <div class="box__footer">
+            <h2>Soluciones</h2>
+            <a href="https://www.google.com">App Desarrollo</a>
+            <a href="#">App Marketing</a>
+            <a href="#">IOS Desarrollo</a>
+            <a href="#">Android Desarrollo</a>
+        </div>
+  
+        <div class="box__footer">
+            <h2>Compañia</h2>
+            <a href="#">Acerca de</a>
+            <a href="#">Trabajos</a>
+            <a href="#">Procesos</a>
+            <a href="#">Servicios</a>              
+        </div>
+  
+        <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a href="#"> <i class="fab fa-facebook-square"></i>Facebook</a>
+            <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i>Youtube</a>
+            <a href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
+        </div>
+  
+    </div>
+  
+    <div class="box__copyright">
+        <hr>
+        <p>Todos los derechos reservados © 2021 <b>MagtimusPro</b></p>
+    </div>
+  </footer>
+            
 
             
-            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-            
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
             
     <script src="ArchivosLenguajes/js/index.js"></script>
 </body>
