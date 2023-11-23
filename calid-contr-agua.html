@@ -1,15 +1,187 @@
 <!-- que hacemos 4 -->
 <!-- Calidad y control del agua -->
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< Updated upstream
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calidad y control del agua</title>
 </head>
 <body>
     
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        body {
+          margin: 0;
+          font-family: 'Arial', sans-serif;
+        }
+    
+        nav {
+          background-color: rgb(255, 255, 255)d6d;
+          padding: 15px;
+          text-align: center;
+          position: relative;
+        }
+    
+        nav a {
+          color: rgb(124, 21, 21);
+          text-decoration: none;
+          padding: 15px;
+          display: inline-block;
+        }
+    
+        .menu-icon {
+          display: none;
+          cursor: pointer;
+        }
+    
+        .menu {
+          display: inline-block;
+        }
+    
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+    
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 260px;
+          box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+    
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+    
+        .info-box {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          padding: 20px;
+          box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+    
+        .dropdown:hover .info-box {
+          display: block;
+        }
+    
+        .info-img {
+          width: 100%;
+          height: auto;
+        }
+    
+        @media screen and (max-width: 600px) {
+          nav a {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+          }
+    
+          .menu-icon {
+            display: block;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+          }
+    
+          .menu {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #333;
+            width: 80%; /* Ancho ajustable */
+            max-width: 300px; /* Ancho máximo */
+            padding: 20px;
+          }
+    
+          .menu.active {
+            display: block;
+          }
+    
+          .dropdown {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+          }
+    
+          .dropdown-content {
+            width: 100%;
+          }
+    
+          .info-box {
+            width: 100%;
+          }
+        }
+
+        .menu-title{
+          display: block;
+        font-style: normal;
+        font-weight: 800;
+        margin-left: 0;
+        margin-right: 0;
+        color: #036595!important;
+        font-size: 15px;
+        border-bottom-style: solid ;
+        border-bottom-width:1px;
+        border-bottom-color:#eeeeee; 
+        padding: 5px 0;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        
+        <div class="menu">
+          <div class="dropdown">
+            <a href="#">Servicios</a>
+            <div class="dropdown-content">
+              <div class="info-box">
+                <h1  class="menu-title"><strong>Como Pagar tu Factura</strong></h1>
+                <img class="info-img" src="img/imagenes-de-prueba/quienessomos.jpg" alt="Información adicional">
+                <p style="line-height:15px;">Aguas Cordobesas es la concesionaria del servicio de agua potable para&nbsp;la ciudad de Córdoba.</p>
+                <strong>Ver más ></strong><br></p>
+              </div>
+            </div>
+          </div>
+          <a href="#">Contacto</a>
+        </div>
+      </nav>
+    
+      <!-- Contenido de la página aquí -->
+    
+      <script>
+        function toggleMenu() {
+          var menu = document.querySelector('.menu');
+          menu.classList.toggle('active');
+        }
+      </script>
+    
+    
+      <!-- Contenido de la página aquí -->
+    
+>>>>>>> Stashed changes
 </body>
 </html>
