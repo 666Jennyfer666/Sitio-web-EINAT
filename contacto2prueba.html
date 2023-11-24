@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen 360 Grados</title>
+  <link href="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/threejs/r70/three.min.js"> </script>
+  <script src="https://cdn.rawgit.com/mistic100/Photo-Sphere-Viewer/3.1.0/dist/photo-sphere-viewer.min.js"> </script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    #photosphere { height:600px; width:100%; margin: 0 auto }
+  </style>
+ 
+</head>
+<body>
+    <h1>hol</h1>
+    <div id=”photosphere”> </div>
+
+
+  
+  <script>
+
+    // 360 viewer
+    var PSV = new PhotoSphereViewer({
+      panorama: 'https://maps.app.goo.gl/Kw1eXeiDhycFTv9M7',
+      container: 'photosphere',
+      loading_img: '',
+      navbar: 'autorotate zoom download fullscreen',
+      caption: 'texto',
+      default_fov: 65,
+      mousewheel: false,
+      size: {
+        height: 400
+      }
+    });
+  
+  </script>
+  
+
+ 
+<!-- se necesita instalas esto en un servidor para que funcione-->
+</body>
+</html>

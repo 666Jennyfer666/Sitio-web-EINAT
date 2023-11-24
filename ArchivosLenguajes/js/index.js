@@ -27,17 +27,17 @@ const imageCount = carousel.children.length;
 let currentIndex = 0;
 
 nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1.4) % imageCount;
+  currentIndex = (currentIndex + 2.2) % imageCount;
   updateCarousel();
 });
 
 prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1.4 + imageCount) % imageCount;
+  currentIndex = (currentIndex - 2.2 + imageCount) % imageCount;
   updateCarousel();
 });
 
 function updateCarousel() {
-  const translateX = -currentIndex * 12; // 12% para cada imagen
+  const translateX = -currentIndex * 7; // 7% para cada imagen
   carousel.style.transition = "transform 0.5s ease-in-out";
   carousel.style.transform = `translateX(${translateX}%)`;
 
