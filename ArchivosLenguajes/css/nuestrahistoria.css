@@ -31,3 +31,21 @@
     flex: 1;
     margin: 35px;
 }
+
+.img-index{
+    max-width: 100%;
+}
+
+.white{color: #ffffff;}
+ .blue01{color: rgb(29, 29, 99);}
+ .green01{color: #45bf55;}
+
+.topSection{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background: #032e47;
+    background: -moz-linear-gradient(to right,  #032e47 25%,#0c3f4e 100%); 
+    background: -webkit-linear-gradient(to right,  #032e47 25%,#0c3f4e 100%);
+    background: linear-gradient(to right,  #032e47 25%,#0c3f4e 100%);
+    min-height: 100px;
+}
