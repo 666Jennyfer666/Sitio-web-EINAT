@@ -1,21 +1,98 @@
+/* estilos de la pagina index.html */
+
 body{
     background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
 }
-/*  carrousel */
-.carousel-container {
+
+/* video y titulo */
+.promo{
+    padding-top: 250px;
+    margin-right: 70%;
+    display: flex;
+    margin-left: 20%;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+.promo h1{
+font-size: 3.5rem;
+text-align: center;
+color: rgb(0, 0, 0);
+font-weight: 700;
+}
+.promo p {
+font-size: 2.5rem;
+/*text-align: center;*/
+font-weight: 900;
+color: rgb(34, 107, 170);
+}
+
+#hero{
+    min-height: 100vh;
+    position: relative;
+
+}
+video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 100%;
-    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+}
+.capa{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+/* Estilos generales para pantallas más pequeñas */
+/* Media query para pantallas más grandes y orientación horizontal */
+@media screen and (min-width: 600px) and (orientation: landscape) {
+body {
+margin: 0 0 0 0;
+}
+footer{
+max-width: 100%;
+}
+nav {
+max-width:100%;
+}
 }
 
-.carousel-slide {
-    display: none;
+/* Otra media query para pantallas aún más grandes y resolución alta */
+@media screen and (min-width: 1200px) and (min-resolution: 300dpi) {
+body {
+margin: 0 0 0 0;
+}
 }
 
-.carousel-slide img {
-    max-width: 100%;
-    height: auto;
+#letratiyulo{
+color: #036595;
 }
-/* final carrousel */
+
+.letra {
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+}
+
+.letra.loaded {
+opacity: 1;
+}
+/*end titulo vid*/
+
 
 /* Acessos rapidos */
 .acessos-raidos-title{

@@ -14,6 +14,134 @@
  
 </head>
 <body>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #555;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #777;
+    }
+
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      z-index: 1;
+      width: 100%;
+    }
+
+    nav li:hover .submenu {
+      display: block;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #555;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav li {
+        text-align: center;
+      }
+
+      nav a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mi Sitio Web</h1>
+  </header>
+
+  <nav>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <ul>
+      <li><a href="#">USUARIO</a></li>
+      <li><a href="#">PROVEEDORES</a></li>
+      <li>
+        <a href="#">QUIÉNES SOMOS</a>
+        <div class="submenu">
+          <h3>Quiénes Somos</h3>
+          <p>Descripción de Quiénes Somos...</p>
+        </div>
+      </li>
+      <li>
+        <a href="#">SUSTENTABILIDAD</a>
+        <div class="submenu">
+          <h3>Sustentabilidad y Sostenibilidad</h3>
+          <p>Descripción de Sustentabilidad y Sostenibilidad...</p>
+        </div>
+      </li>
+      <li><a href="#">EDUCACIÓN</a></li>
+      <li><a href="#">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido de la página -->
+
+  <script>
+    function toggleMenu() {
+      var menu = document.querySelector('nav ul');
+      menu.classList.toggle('show');
+    }
+  </script>
     <h1>hol</h1>
     <div id=”photosphere”> </div>
 

@@ -1,23 +1,17 @@
 /* carrousel de imagenes */
-document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelectorAll(".carousel-slide");
-  let currentSlide = 0;
 
-  function showSlide(slideIndex) {
-      slides[currentSlide].style.display = "none";
-      currentSlide = (slideIndex + slides.length) % slides.length;
-      slides[currentSlide].style.display = "block";
-  }
-
-  function nextSlide() {
-      showSlide(currentSlide + 1);
-  }
-
-  // Inicia el carrusel y configura el intervalo de cambio
-  showSlide(currentSlide);
-  setInterval(nextSlide, 4000); // Cambiar cada 4 segundos (4000 ms)
-});
 /* final carrousel img index */
+
+/* letra titulo */
+document.addEventListener("DOMContentLoaded", function() {
+  var letras = document.querySelectorAll(".letra");
+  letras.forEach(function(letra, index) {
+    setTimeout(function() {
+      letra.classList.add("loaded");
+    }, index * 200);
+  });
+});
+/* end letra titulo */
 
 /* acessos rapidos */
 const carousel = document.querySelector('.carousel');
@@ -38,7 +32,7 @@ prevButton.addEventListener('click', () => {
 
 function updateCarousel() {
   const translateX = -currentIndex * 7; // 7% para cada imagen
-  carousel.style.transition = "transform 0.5s ease-in-out";
+  carousel.style.transition = "transform 0.4s ease-in-out";
   carousel.style.transform = `translateX(${translateX}%)`;
 
   // Restablecer la transición después de que termine la animación
