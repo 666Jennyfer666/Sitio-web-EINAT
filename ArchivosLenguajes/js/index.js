@@ -21,12 +21,12 @@ const imageCount = carousel.children.length;
 let currentIndex = 0;
 
 nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 2.2) % imageCount;
+  currentIndex = (currentIndex + 2.4) % imageCount;
   updateCarousel();
 });
 
 prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 2.2 + imageCount) % imageCount;
+  currentIndex = (currentIndex - 2.4 + imageCount) % imageCount;
   updateCarousel();
 });
 
